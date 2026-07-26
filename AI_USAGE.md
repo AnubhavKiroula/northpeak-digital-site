@@ -1,0 +1,3 @@
+# AI Usage
+
+I used Claude to scaffold the initial HTML/CSS structure for the one-page site and to calculate exact WCAG contrast ratios across my color palette rather than eyeballing them. When my mobile Lighthouse score came back at 56, I used it to help diagnose why — it identified that Lighthouse's own warning about browser extensions explained the inflated JS/blocking numbers, which I verified myself by re-running the audit in Incognito (real score: 99). I made the actual calls myself: which contrast fix to prioritize, the copy and visual direction (the mountain/topographic theme, the Basecamp/Ridgeline/Summit pricing names), and the decision to document the cache-lifetime flag as an infra limitation rather than chase it further.
